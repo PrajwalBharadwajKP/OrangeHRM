@@ -11,7 +11,7 @@ public class HomePage {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
-	@FindBy(id="welcome")
+	@FindBy(xpath="//img[@alt='profile picture']")
 	private WebElement profile;
 	@FindBy(xpath="//a[text()='Logout']")
 	private WebElement logout;
